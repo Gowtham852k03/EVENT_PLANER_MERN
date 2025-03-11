@@ -168,6 +168,9 @@ nav svg {
   content: url("/restaurant.jpeg");
 }
 
+
+
+
 .hero .item {
   display: flex;
   flex-direction: column;
@@ -216,6 +219,9 @@ nav svg {
   }
   .hero .item {
     width: 100%;
+  }
+  .hero img{
+    content: url("/restaurant1.jpeg"); /* Mobile image */
   }
 }
 
