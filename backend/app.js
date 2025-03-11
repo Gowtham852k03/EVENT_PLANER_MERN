@@ -9,11 +9,15 @@ dotenv.config({ path: "./config/config.env" });
 
 // Correct CORS Setup
 app.use(cors({
-    origin: process.env.FRONTEND_URL, // Make sure this URL matches exactly
-    methods: ["POST", "GET"],
+    origin: process.env.FRONTEND_URL, // Ensure no trailing slash
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Add OPTIONS
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
+// Handle preflight requests explicitly
+app.options("*", cors());
+
 
 // Middleware
 app.use(express.json());
