@@ -352,7 +352,8 @@ footer .banner .tag div input {
   border-radius: 8px;
   padding: 6px;
   background: transparent;
-  border: 1px solid #fff7ea;
+  color: #fff;
+  border: 1px solid #a2783a;
 }
 footer .banner .tag div input:focus {
   outline: none;
