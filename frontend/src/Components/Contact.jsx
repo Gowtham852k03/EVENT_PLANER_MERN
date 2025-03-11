@@ -16,7 +16,7 @@ const Contact = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://event-planer-mern.onrender.com/api/v1/message/send",
         { name, email, subject, message },
         { headers: { "Content-Type": "application/json" } }
       );
