@@ -165,6 +165,12 @@ nav svg {
   top: 0;
   left: 0;
   height: 100%;
+  content: url("/restaurant.jpeg");
+}
+@media (max-width: 768px) {
+  .hero img {
+    content: url("/restaurant1.jpeg"); /* Mobile image */
+  }
 }
 .hero .item {
   display: flex;

@@ -8,11 +8,10 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 app.use(cors({
-    origin: "*", // ⚠️ Do not use in production
+    origin: process.env.FRONTEND_URL,
     methods: ["POST"],
     credentials: true,
 }));
-
 
 
 app.use(express.json());
