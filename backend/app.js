@@ -8,7 +8,7 @@ const app = express();
 dotenv.config({ path: "./config/config.env" });
 
 app.use(cors({
-    origin: "https://event-planer-mern.vercel.app",
+    origin: process.env.FRONTEND_URL,
     methods: ["POST"],
     credentials: true,
 }));
