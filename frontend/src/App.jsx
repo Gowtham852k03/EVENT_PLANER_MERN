@@ -7,7 +7,6 @@ import About from './Components/About';
 import HeroSection from './Components/HeroSection';
 import Service from './Components/Service';
 import Navbar from './Components/Navbar';
-
 import Footer from './Components/Footer'
 const App = () => {
   return (
